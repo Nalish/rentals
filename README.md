@@ -1,33 +1,52 @@
-### Rentals
+# Rentals
 
-Manage Rentals in Frappe
+A rental management application built with Frappe Framework  it is primarily used in a site called irfan.cabs and is used to manage the booking and renting out of cars
 
-### Installation
+## Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- Store Driver Details
+- Store Ride Order Details
+- Book a Ride
+- Calculate the cost of a particular ride based on the rate and the distance
+
+## Installation
+
+Clone the repository inside your Frappe bench apps directory:
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
+cd frappe-bench/apps
+git clone  https://github.com/Nalish/rentals.git
+```
+
+
+```bash
+cd ..
 bench install-app rentals
 ```
 
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+Run the server:
 
 ```bash
-cd apps/rentals
-pre-commit install
+bench start
 ```
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+Open in your browser:
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+http://localhost:8000
 
-### License
 
-mit
+## Screenshots
+
+### Order a ride
+
+![Order a Ride](./rentals/screenshots/orderRide.png)
+
+
+### Reports
+
+#### Revenue By Make
+![Reports](./rentals/screenshots/revenueByMake.png)
+
+#### Vehicles By Make
+![Reports](./rentals/screenshots/vehiclesByMake.png)
+
